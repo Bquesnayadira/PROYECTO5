@@ -1,0 +1,277 @@
+
+body{ 
+    color: rgb(0, 0, 0);
+    height: 800px;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/335/781/301/colors-purple-4k-wallpaper-preview.jpg);
+    background-size: cover;
+    background-size: 90rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+
+/*¿con que fin se creo?*/
+.caja1 {
+    border-top: 10px double rgb(223, 144, 247);
+    border-right: 10px double rgb(223, 144, 247);
+    border-bottom: 10px double rgb(223, 144, 247);
+    border-left: 10px double rgb(223, 144, 247);
+
+    background-color: rgb(238, 234, 240) ;
+    padding-top: 90px;
+    padding-right: 90px;
+    padding-bottom: 90px;
+    padding-left: 90px;
+
+    width: 500px;
+    margin: 80px auto;
+    height: 90%;
+    height: 500px;
+    display: inline-grid;
+    float: right;
+
+    margin-right: 70px;
+}
+
+/*div que encierra  atodos los sidebar*/
+.yadi {
+    display: inline-block;
+    float: left;
+    margin-left: 80px;
+}
+/*barra de opciones d ela pagina*/
+  /*ancho del div sidebar*/
+  .sidebar-wrapper{
+    width: 350px;
+    margin: 130px auto;
+    
+  }
+
+a {
+  color: blueviolet;
+  }
+
+h1 {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+  /* largo del div sidebar*/
+  .sidebar{
+      display: flex;
+      flex-direction: column;
+      height: 10%;
+      height: 90px;
+      background-color: rgb(223, 144, 247);
+      border-radius: 2px;
+  }
+  
+      /*Logo placeholder*/
+      .sidebar__logo h3{
+          text-transform: uppercase;
+          color: rgb(8, 2, 2);
+          text-align: center;
+      }
+  
+      /*Sidebar Navigation*/
+      .sidebar__nav{
+          flex-grow: 1;
+          list-style: none;
+          padding: 0;
+      }
+          .sidebar__nav li{
+              padding: 15px;
+              cursor: pointer;
+          }
+          /*centro de la barra*/
+          .sidebar__nav li, .sidebar__nav li:hover{
+              background-color: #F7F2FF;
+          }
+              .sidebar__nav li i{
+                  width: 10px;
+                  display: inline-block;
+                  text-align: center;
+              }
+      
+      /*IMAGEN QUE SE MUEVE*/
+          .contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+
+          .contenedor figure{
+            position: relative;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+            cursor: pointer;
+          }
+          .contenedor figure img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+          }
+          .contenedor figure .capa{
+            position:absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(68, 132, 146, 0.657);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+          }
+          .contenedor figure:hover > .capa{
+            opacity: 1;
+            visibility: visible;
+          }
+          .contenedor figure:hover > .capa h2{
+            margin-top: 70px;
+            margin-bottom: 15px;
+          }
+          .contenedor figure:hover > .capa h2{
+            color: rgb(250, 250, 250);
+            font-weight: 400;
+            margin-bottom: 20px;
+            transition: all 500ms ease-out;
+            margin-top: 30px;
+          }
+          .contenedor figure .capa p{
+            color: rgb(253, 253, 253);
+            font-size: 25px;
+            line-height: 1.5;
+            width: 100%;
+            max-width: 220px;
+            margin: auto;
+          }
+          .contenedor figure:hover > img{
+            transform: scale(1.3);
+          }
+
+          /*BURBUJAS*/
+          .burbuja{
+            border-radius: 50%;
+            background: #fff;
+            opacity: .3;
+        
+            position: absolute;
+            bottom: -150;
+            
+            animation: burbujas 3s linear infinite ;
+        }
+        
+        .burbuja:nth-child(1){
+            width: 80px;
+            height: 80px;
+            left: 5%;
+            animation-duration: 3s;
+            animation-delay: 3s;
+        }
+        
+        .burbuja:nth-child(2){
+            width: 100px;
+            height: 100px;
+            left: 35%;
+            animation-duration: 3s;
+            animation-delay: 5s;
+        }
+        
+        .burbuja:nth-child(3){
+            width: 20px;
+            height: 20px;
+            left: 15%;
+            animation-duration: 1.5s;
+            animation-delay: 7s;
+        }
+        
+        .burbuja:nth-child(4){
+            width: 50px;
+            height: 50px;
+            left: 90%;
+            animation-duration: 6s;
+            animation-delay: 3s;
+        }
+        
+        .burbuja:nth-child(5){
+            width: 70px;
+            height: 70px;
+            left: 65%;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+        
+        .burbuja:nth-child(6){
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 4s;
+            animation-delay: 5s;
+        }
+        
+        .burbuja:nth-child(7){
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 4s;
+            animation-delay: 5s;
+        }
+        
+        .burbuja:nth-child(8){
+            width: 100;
+            height: 100px;
+            left: 52%;
+            animation-duration: 5s;
+            animation-delay: 5s;
+        }
+        
+        .burbuja:nth-child(9){
+            width: 65px;
+            height: 65px;
+            left: 51%;
+            animation-duration: 3s;
+            animation-delay: 2s;
+        }
+        
+        .burbuja:nth-child(10){
+            width: 40px;
+            height: 40px;
+            left: 35%;
+            animation-duration: 3s;
+            animation-delay: 4s;
+        }
+        
+        
+        @keyframes burbujas{
+            0%{
+                bottom: 0;
+                opacity: 0;
+            }
+            30%{
+                transform: translateX(30px);
+            }
+            50%{
+                opacity: .4;
+            }
+            100%{
+                bottom: 100vh;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes movimiento{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(30px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
